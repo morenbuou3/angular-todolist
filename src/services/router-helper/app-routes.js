@@ -1,6 +1,6 @@
 export default [
   {
     url: '/',
-    component: 'todolist'
-  }
+    component: 'todolist',
+  },
 ];
