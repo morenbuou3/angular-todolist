@@ -1,4 +1,6 @@
 const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+
 module.exports = {
   entry: {
     'app': './src/app.module.js',
@@ -46,5 +48,12 @@ module.exports = {
   devServer: {
     port: 3000,
     contentBase: './'
-  }
+  },
+  plugins: [
+    new HtmlWebpackPlugin({
+      title: 'To-do-list',
+      template: 'index.html',
+      inject: "body"
+    }),
+  ]
 };
