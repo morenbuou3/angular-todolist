@@ -3,9 +3,9 @@ var path = require('path');
 var app = express();
 var webpack = require('webpack');
 
-app.use('/build', express.static(__dirname + '/build'));
-app.use('/node_modules', express.static(__dirname + '/node_modules'));
-app.use('/src', express.static(__dirname + '/src'));
+// app.use('/build', express.static(__dirname + '/build'));
+// app.use('/node_modules', express.static(__dirname + '/node_modules'));
+// app.use('/src', express.static(__dirname + '/src'));
 
 var compiler = webpack(require('./webpack.config.js'));
 

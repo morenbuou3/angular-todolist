@@ -12,6 +12,10 @@ export default function TodoCtrl($scope) {
   };
 
   $scope.addTodo = function () {
+    if (!$scope.formTodoText) {
+      alert("must input!");
+      return;
+    }
     $scope.todos.push({ text: $scope.formTodoText, done: false });
     $scope.formTodoText = '';
   };
