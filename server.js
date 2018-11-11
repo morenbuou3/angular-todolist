@@ -30,4 +30,4 @@ app.use('*', function (req, res, next) {
 //   response.sendfile(`${__dirname}/index.html`);
 // });
 
-app.listen('9000', () => console.log('SSR Server started'));
+app.listen('3000', () => console.log('SSR Server started'));
