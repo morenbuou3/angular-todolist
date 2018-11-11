@@ -8,7 +8,9 @@ pipeline {
     stages {
         stage('Build') {
             steps {
+                echo 'before npm install'
                 sh 'npm install'
+                echo 'after npm install'
             }
         }
     }
