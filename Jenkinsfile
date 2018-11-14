@@ -1,7 +1,7 @@
 pipeline {
     agent {
         docker {
-            image 'circleci/node:9.3-stretch-browser'
+            image 'wmluke/jenkins-slave'
             args '-p 3000:3000'
         }
     }
