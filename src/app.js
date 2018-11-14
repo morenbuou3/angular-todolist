@@ -1,11 +1,12 @@
-import './app.components';
+import './components/todolist/index';
 import './services/core.module';
 import 'angular';
+import 'angular-mocks'
 
-const appModule = angular
+const app = angular
   .module('to-do-list', [
     'todo',
     'ui.router',
   ]);
 
-export default appModule;
+export default app;

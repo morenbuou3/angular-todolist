@@ -1,7 +1,7 @@
-import controller from './todolist.controller';
+import todolistController from './todolist.controller';
 import template from './todolist.html';
 
 export default {
-  controller,
+  controller: todolistController,
   template,
 };
