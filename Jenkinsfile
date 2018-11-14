@@ -1,7 +1,7 @@
 pipeline {
     agent {
         docker {
-            image 'wmluke/jenkins-slave'
+            image 'lleon/jenkins-slave-docker-node-chrome'
             args '-p 3000:3000'
         }
     }
